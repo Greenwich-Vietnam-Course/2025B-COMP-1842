@@ -1,0 +1,97 @@
+:root {
+    --card-border: #e5e7eb;
+    --muted: #f8fafc;
+    --accent: #0ea5e9;
+    --accent-soft: #dbeafe;
+    --accent-border: #93c5fd;
+}
+
+.page {
+    max-width: 820px;
+    margin: 24px auto;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    line-height: 1.5;
+    padding: 0 16px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.card {
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px;
+    margin: 12px 0;
+    background: #fff;
+}
+
+.card h2 {
+    margin: 0 0 8px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border);
+    background: var(--muted);
+    cursor: pointer;
+}
+
+.btn[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-accent {
+    background: var(--accent-soft);
+    border-color: var(--accent-border);
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.selected {
+    border-left: 4px solid var(--accent);
+}
+
+.hovered {
+    background: #fafafa;
+}
+
+.box {
+    user-select: none;
+    border: 1px dashed var(--card-border);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box-hover {
+    outline: 2px dashed var(--accent);
+}
