@@ -1,0 +1,78 @@
+// ---------- VARIABLES ----------
+$primary: #2563eb;
+$secondary: #fbbf24;
+$accent: #22c55e;
+
+// ---------- BASIC STYLES ----------
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background: #f8fafc;
+}
+
+// ---------- USE VARIABLES ----------
+.box {
+    width: 120px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.box1 {
+    background: $primary;
+}
+
+.box2 {
+    background: $secondary;
+}
+
+.box3 {
+    background: $accent;
+}
+
+// ---------- MIXIN ----------
+@mixin card($color) {
+    background: $color;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-blue {
+    @include card($primary);
+}
+
+.card-yellow {
+    @include card($secondary);
+}
+
+.card-green {
+    @include card($accent);
+}
+
+// ---------- EXTEND ----------
+.button-basic {
+    background: gray;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button-primary {
+    @extend .button-basic;
+    background: $primary;
+}
+
+.button-warning {
+    @extend .button-basic;
+    background: $secondary;
+}

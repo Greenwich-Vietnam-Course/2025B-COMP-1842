@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background: #f8fafc;
+}
+
+.box {
+    width: 120px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.box1 {
+    background: #2563eb;
+}
+
+.box2 {
+    background: #fbbf24;
+}
+
+.box3 {
+    background: #22c55e;
+}
+
+.card-blue {
+    background: #2563eb;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-yellow {
+    background: #fbbf24;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-green {
+    background: #22c55e;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-basic,
+.button-primary,
+.button-warning {
+    background: gray;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button-primary {
+    background: #2563eb;
+}
+
+.button-warning {
+    background: #fbbf24;
+}
