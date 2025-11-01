@@ -5,8 +5,8 @@
 import express from 'express'
 import cors from 'cors'
 
-import postsRouter from './routes/postsRouter.js'
-import authorsRouter from './routes/authorsRouter.js'
+import postsRoutes from './routes/posts.routes.js'
+import authorsRoutes from './routes/authors.routes.js'
 
 const app = express()
 const PORT = 3000
@@ -15,8 +15,8 @@ app.use(cors()) // Enable CORS for all routes.
 app.use(express.json()) // Parse JSON request bodies.
 
 // Define routes.
-app.use('/posts', postsRouter)
-app.use('/authors', authorsRouter)
+app.use('/posts', postsRoutes)
+app.use('/authors', authorsRoutes)
 
 // Handle undefined routes.
 app.all(/.*/, (req, res) => res.status(404).json({ error: 'Endpoint not found.' }))

@@ -1,4 +1,4 @@
-import Author from '../models/authorsModel.js'
+import Author from '../models/Author.model.js'
 
 export const list = async (req, res) => {
     try {
