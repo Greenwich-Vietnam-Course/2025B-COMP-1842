@@ -1,0 +1,11 @@
+import List from '../../views/posts/List.vue'
+import Form from '../../views/posts/Form.vue'
+
+export default [
+    { path: '/posts', component: List },
+    { path: '/posts/new', component: Form, props: { mode: 'create' } },
+    {
+        path: '/posts/:id/edit', component: Form,
+        props: route => ({ mode: 'edit', id: route.params.id })
+    }
+]
