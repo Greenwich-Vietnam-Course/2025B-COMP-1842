@@ -52,8 +52,9 @@ onMounted(load)
                 <td>{{ item.email }}</td>
                 <td>{{ item.createdAt ? new Date(item.createdAt).toLocaleString() : '' }}</td>
                 <td>
-                    <RouterLink :to="`/authors/${item._id}/edit`">Edit</RouterLink>
-                    <button @click="remove(item._id)">Delete</button>
+                    <RouterLink :to="`/authors/${item._id}`">View</RouterLink> |
+                    <RouterLink :to="`/authors/${item._id}/edit`">Edit</RouterLink> |
+                    <button @click="remove(item._id)">Delete</button> |
                 </td>
             </tr>
 

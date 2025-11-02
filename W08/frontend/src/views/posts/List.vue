@@ -50,8 +50,9 @@ onMounted(load)
                 <td>{{ item.title }}</td>
                 <td>{{ item.content }}</td>
                 <td>
-                    <RouterLink :to="`/posts/${item._id}/edit`">Edit</RouterLink>
-                    <button @click="remove(item._id)">Delete</button>
+                    <RouterLink :to="`/posts/${item._id}`">View</RouterLink> |
+                    <RouterLink :to="`/posts/${item._id}/edit`">Edit</RouterLink> |
+                    <button @click="remove(item._id)">Delete</button> |
                 </td>
             </tr>
 
