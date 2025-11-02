@@ -1,0 +1,4 @@
+.router-link-active {
+    background-color: green;
+    color: white;
+}
