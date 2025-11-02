@@ -44,13 +44,13 @@ onMounted(load)
         <h2>{{ item.title }}</h2>
         <p>{{ item.content }}</p>
 
-        <div v-if="isAdmin">
+        <p v-if="isAdmin">
             <RouterLink :to="`/posts/${item._id}/edit`">Edit</RouterLink> |
             <button @click="remove">Delete</button> |
-        </div>
+        </p>
 
-        <div>
+        <p>
             <RouterLink to="/posts">Back to list</RouterLink>
-        </div>
+        </p>
     </div>
 </template>
